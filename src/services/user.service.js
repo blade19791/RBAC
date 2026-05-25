@@ -24,7 +24,7 @@ export const loginUser = async (data) => {
   const valid = await validatePassword(data.password, isExisting.password);
   if (!valid) throw new Error("Invalid username or password");
 
-  const token = generateToken(isExisting.id, isExisting.email);
+  const token = generateToken(isExisting.id, isExisting.email, isExisting.role);
 
   return token;
 };
