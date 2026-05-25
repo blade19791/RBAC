@@ -13,7 +13,7 @@ The application is structured using the **Model-View-Controller (MVC)** architec
 
 ### 2. Authentication
 Implemented a secure user authentication workflow:
-- Securely storing user credentials using password hashing techniques.
+- Securely storing user credentials using password hashing techniques (**bcrypt**).
 - Validating credentials during the login flow.
 - Building stateless authentication to ensure the API can scale without relying on server-side sessions.
 
@@ -38,4 +38,5 @@ Secured the database layer from malicious attacks:
 - **Node.js** with **Express.js**
 - **PostgreSQL** (Database)
 - **jsonwebtoken** (Auth)
+- **bcrypt** (Password Hashing)
 - **Joi** (Input Validation)
